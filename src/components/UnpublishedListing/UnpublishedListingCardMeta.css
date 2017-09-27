@@ -1,26 +1,27 @@
 @import '../UI/theme.css';
 
-.cardMeta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.unpublishedListingCardMeta-- {
+  &cardMeta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  height: 34px;
-  padding: 0 16px;
-  margin-bottom: -6px;
+    height: 34px;
+    padding: 0 16px;
+    margin-bottom: -6px;
 
-  font-size: .75em;
-  text-transform: uppercase;
+    font-size: .75em;
+    text-transform: uppercase;
 
-  background: var(--backgroundAltColor);
-  color: #fff;
-}
+    background: var(--backgroundAltColor);
+    color: #fff;
+  }
 
-.meta {}
-.label {
-  padding: 5px 8px 4px 8px;
-  border-radius: var(--borderRadiusLarge);
+  &label {
+    padding: 5px 8px 4px 8px;
+    border-radius: var(--borderRadiusLarge);
 
-  background: var(--backgroundAltColor);
-  color: var(--defaultColorLight)
+    background: var(--backgroundAltColor);
+    color: var(--defaultColorLight)
+  }
 }

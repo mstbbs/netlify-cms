@@ -10,7 +10,10 @@ import { INFERABLE_FIELDS } from '../../constants/fieldInference';
 import PreviewContent from './PreviewContent.js';
 import PreviewHOC from '../Widgets/PreviewHOC';
 import Preview from './Preview';
-import styles from './PreviewPane.css';
+import { prefixer } from '../../lib/styleHelper';
+
+// import styles from './PreviewPane.css';
+const styles = prefixer('previewPane');
 
 export default class PreviewPane extends React.Component {
 

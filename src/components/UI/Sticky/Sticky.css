@@ -1,19 +1,20 @@
-.stickyContainer {
-  position: relative !important;
-}
+.sticky-- {
+  &stickyContainer {
+    position: relative !important;
+  }
 
-.sticky {
-  width: 100%;
-}
+  &sticky {
+    width: 100%;
+  }
 
-.stickyActive:not(.stickyAtBottom) {
-  position: fixed !important;
-  top: 54px !important;
-}
+  &stickyActive:not(.stickyAtBottom) {
+    position: fixed !important;
+    top: 54px !important;
+  }
 
-.stickyAtBottom {
-  position: absolute !important;
-  top: auto !important;
-  bottom: 30px !important;
+  &stickyAtBottom {
+    position: absolute !important;
+    top: auto !important;
+    bottom: 30px !important;
+  }
 }
-

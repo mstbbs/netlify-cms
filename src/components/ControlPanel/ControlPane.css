@@ -1,15 +1,22 @@
-@import "../UI/theme";
+@import '../UI/theme.css';
 
-.control {
-  color: var(--textColor);
-  position: relative;
-  padding: 20px 0 10px 0;
-  margin-top: 16px;
+.controlPane-- {
+  &root p {
+    font-size: 16px;
+  }
 
-  & input,
-  & textarea,
-  & select,
-  & div[contenteditable=true] {
+  &control {
+    color: var(--textColor);
+    position: relative;
+    padding: 20px 0 10px 0;
+    margin-top: 16px;
+  }
+  
+
+  &control input,
+  &control textarea,
+  &control select,
+  &control div[contenteditable=true] {
     display: block;
     width: 100%;
     padding: 12px;
@@ -29,33 +36,29 @@
     }
   }
 
-  & input,
-  & textarea,
-  & select {
+  &control input,
+  &control textarea,
+  &control select {
     font-family: var(--fontFamilyMono);
   }
-}
 
-.label {
-  display: block;
-  color: var(--controlLabelColor);
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
 
-.labelWithError {
-  composes: label;
-  color: #FF706F;
-}
+  &label {
+    display: block;
+    color: var(--controlLabelColor);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
 
-.errors {
-  list-style-type: none;
-  font-size: 10px;
-  color: #FF706F;
-  margin-bottom: 5px;
-}
+  &labelWithError {
+    color: #FF706F;
+  }
 
-p {
-  font-size: 16px;
+  &errors {
+    list-style-type: none;
+    font-size: 10px;
+    color: #FF706F;
+    margin-bottom: 5px;
+  }
 }

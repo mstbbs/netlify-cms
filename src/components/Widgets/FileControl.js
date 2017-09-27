@@ -3,7 +3,10 @@ import React from 'react';
 import { truncateMiddle } from '../../lib/textHelper';
 import { Loader } from '../UI';
 import AssetProxy, { createAssetProxy } from '../../valueObjects/AssetProxy';
-import styles from './FileControl.css';
+import { prefixer } from '../../lib/styleHelper';
+
+const styles = prefixer('fileControl');
+// import styles from './FileControl.css';
 
 const MAX_DISPLAY_LENGTH = 50;
 

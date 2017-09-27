@@ -9,8 +9,11 @@ import ControlPane from '../ControlPanel/ControlPane';
 import PreviewPane from '../PreviewPane/PreviewPane';
 import Toolbar from './EntryEditorToolbar';
 import { StickyContext } from '../UI/Sticky/Sticky';
-import styles from './EntryEditor.css';
 import stickyStyles from '../UI/Sticky/Sticky.css';
+
+import { prefixer } from '../../lib/styleHelper';
+
+const styles = prefixer('entryEditor');
 
 const PREVIEW_VISIBLE = 'cms.preview-visible';
 

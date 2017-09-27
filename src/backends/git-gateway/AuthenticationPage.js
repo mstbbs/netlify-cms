@@ -6,7 +6,10 @@ import { Notifs } from 'redux-notifications';
 import { Toast } from '../../components/UI/index';
 import { Card, Icon } from "../../components/UI";
 import logo from "./netlify_logo.svg";
-import styles from "./AuthenticationPage.css";
+import { prefixer } from '../../lib/styleHelper';
+
+const styles = prefixer('gitGatewayAuthenticationPage');
+// import styles from "./AuthenticationPage.css";
 
 let component = null;
 

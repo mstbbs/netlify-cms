@@ -1,13 +1,13 @@
-@import "../../../../UI/theme";
+.toolbar-- {
+  &Toolbar {
+    /* composes: clearfix; */
+    z-index: 1000;
+  }
 
-.Toolbar {
-  composes: clearfix;
-  z-index: 1000;
-}
-
-.Toggle {
-  float: right;
-  margin-bottom: 0;
-  padding-top: 4px;
-  padding-right: 10px;
+  &Toggle {
+    float: right;
+    margin-bottom: 0;
+    padding-top: 4px;
+    padding-right: 10px;
+  }
 }

@@ -1,5 +1,8 @@
 import React from 'react';
-import styles from './Icon.css';
+import { prefixer } from '../../../lib/styleHelper';
+
+const styles = prefixer('icon');
+// import styles from './Icon.css';
 
 const availableIcons = [
   // Font Awesome Editor Icons

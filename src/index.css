@@ -1,5 +1,36 @@
-@import "material-icons.css";
-@import "components/UI/theme.css";
+@import "./material-icons.css";
+@import "./components/UI/theme.css";
+
+@import "./backends/git-gateway/AuthenticationPage.css";
+@import "./backends/github/AuthenticationPage.css";
+
+@import "./components/AppHeader/AppHeader.css";
+@import "./components/ControlPanel/ControlPane.css";
+@import "./components/EntryEditor/EntryEditor.css";
+@import "./components/EntryListing/EntryListing.css";
+@import "./components/FindBar/FindBar.css";
+@import "./components/PreviewPane/PreviewPane.css";
+@import "./components/UI/Sticky/Sticky.css";
+@import "./components/UI/card/Card.css";
+@import "./components/UI/icon/Icon.css";
+@import "./components/UI/loader/Loader.css";
+@import "./components/UI/toast/Toast.css";
+@import "./components/UnpublishedListing/UnpublishedListing.css";
+@import "./components/UnpublishedListing/UnpublishedListingCardMeta.css";
+@import "./components/Widgets/BooleanControl.css";
+@import "./components/Widgets/FileControl.css";
+@import "./components/Widgets/ListControl.css";
+@import "./components/Widgets/Markdown/MarkdownControl/RawEditor/index.css";
+@import "./components/Widgets/Markdown/MarkdownControl/Toolbar/Toolbar.css";
+@import "./components/Widgets/Markdown/MarkdownControl/Toolbar/ToolbarButton.css";
+@import "./components/Widgets/Markdown/MarkdownControl/Toolbar/ToolbarComponentsMenu.css";
+@import "./components/Widgets/Markdown/MarkdownControl/Toolbar/ToolbarPluginForm.css";
+@import "./components/Widgets/Markdown/MarkdownControl/VisualEditor/index.css";
+@import "./components/Widgets/ObjectControl.css";
+
+@import "./containers/App.css";
+@import "./containers/CollectionPage.css";
+@import "./containers/Sidebar.css";
 
 html {
   box-sizing: border-box;

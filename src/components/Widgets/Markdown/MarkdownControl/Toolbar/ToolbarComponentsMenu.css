@@ -1,14 +1,16 @@
-.root {
-  display: inline-block;
-  position: relative;
-}
+.toolbarComponentsMenu-- {
+  &root {
+    display: inline-block;
+    position: relative;
+  }
 
-.menuItem {
-  height: auto;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  &menuItem {
+    height: auto;
+    padding-top: 6px;
+    padding-bottom: 6px;
 
-  & span {
-    font-size: 14px;
+    & span {
+      font-size: 14px;
+    }
   }
 }

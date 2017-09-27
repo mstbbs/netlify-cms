@@ -1,46 +1,43 @@
 @import '../theme.css';
 
+/* redux-notifications override */
+.notif__container {
+  z-index: 10000;
+}
+
 :root {
   --iconSize: 30px;
 }
 
-/* redux-notifications override */
-:global(.notif__container) {
-  z-index: 10000;
-}
+.toast-- {
+  &root {
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px 10px 15px;
+    color: var(--defaultColorLight);
+  }
 
-.root {
-  composes: base container rounded depth from '../theme.css';
-  overflow: hidden;
-  margin: 10px;
-  padding: 10px 10px 15px;
-  color: var(--defaultColorLight);
-}
+  &icon {
+    position: relative;
+    top: .15em;
+    margin-right: .25em;
+    font-size: var(--iconSize);
+    line-height: var(--iconSize);
+  }
 
-.icon {
-  position: relative;
-  top: .15em;
-  margin-right: .25em;
-  font-size: var(--iconSize);
-  line-height: var(--iconSize);
-}
+  &info {
+    background-color: var(--infoColor);
+  }
 
-.info {
-  composes: root;
-  background-color: var(--infoColor);
-}
+  &success {
+    background-color: var(--successColor);
+  }
 
-.success {
-  composes: root;
-  background-color: var(--successColor);
-}
+  &warning {
+    background-color: var(--warningColor);
+  }
 
-.warning {
-  composes: root;
-  background-color: var(--warningColor);
-}
-
-.danger {
-  composes: root;
-  background-color: var(--errorColor);
+  &danger {
+    background-color: var(--errorColor);
+  }
 }

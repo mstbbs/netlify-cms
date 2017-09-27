@@ -4,7 +4,10 @@ import { connect } from 'react-redux';
 import ReactSidebar from 'react-sidebar';
 import _ from 'lodash';
 import { openSidebar } from '../actions/globalUI';
-import styles from './Sidebar.css';
+import { prefixer } from '../lib/styleHelper';
+
+const styles = prefixer('sidebar');
+// import styles from './Sidebar.css';
 
 class Sidebar extends React.Component {
 

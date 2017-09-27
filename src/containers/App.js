@@ -22,8 +22,12 @@ import AppHeader from '../components/AppHeader/AppHeader';
 import { Loader, Toast } from '../components/UI/index';
 import { getCollectionUrl, getNewEntryUrl } from '../lib/urlHelper';
 import { SIMPLE, EDITORIAL_WORKFLOW } from '../constants/publishModes';
-import styles from './App.css';
-import sidebarStyles from './Sidebar.css';
+import { prefixer } from '../lib/styleHelper';
+
+const styles = prefixer('app');
+const sidebarStyles = prefixer('sidebar');
+// import styles from './App.css';
+// import sidebarStyles from './Sidebar.css';
 
 TopBarProgress.config({
   barColors: {

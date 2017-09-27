@@ -34,25 +34,28 @@
   --textFieldBorder: var(--border);
 }
 
-.base {
-  box-sizing: border-box;
+.theme-- {
+  &base {
+    box-sizing: border-box;
+  }
+
+  &container {
+    background-color: var(--backgroundColor);
+    color: var(--defaultColor);
+  }
+
+  &rounded {
+    border-radius: var(--borderRadius);
+  }
+
+  &depth {
+    box-shadow: var(--dropShadow);
+  }
+
+  &clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 }
 
-.container {
-  background-color: var(--backgroundColor);
-  color: var(--defaultColor);
-}
-
-.rounded {
-  border-radius: var(--borderRadius);
-}
-
-.depth {
-  box-shadow: var(--dropShadow);
-}
-
-.clearfix:after {
-  content: '';
-  display: table;
-  clear: both;
-}

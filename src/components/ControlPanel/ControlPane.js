@@ -4,7 +4,9 @@ import { Map, fromJS } from 'immutable';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { resolveWidget } from '../Widgets';
 import ControlHOC from '../Widgets/ControlHOC';
-import styles from './ControlPane.css';
+import { prefixer } from '../../lib/styleHelper';
+
+const styles = prefixer('controlPane');
 
 function isHidden(field) {
   return field.get('widget') === 'hidden';
@@ -31,7 +33,7 @@ export default class ControlPane extends Component {
     const value = entry.getIn(['data', fieldName]);
     const metadata = fieldsMetaData.get(fieldName);
     const errors = fieldsErrors.get(fieldName);
-    const labelClass = errors ? styles.labelWithError : styles.label;
+    const labelClass = errors ? `${ styles.label } ${ styles.labelWithError }` : styles.label;
     if (entry.size === 0 || entry.get('partial') === true) return null;
     return (
       <div className={styles.control}>
@@ -66,7 +68,7 @@ export default class ControlPane extends Component {
     }
 
     return (
-      <div>
+      <div className={styles.root}>
         {
           fields.map((field, i) => {
             if (isHidden(field)) {

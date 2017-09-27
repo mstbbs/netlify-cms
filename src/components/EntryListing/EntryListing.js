@@ -7,7 +7,9 @@ import history from '../../routing/history';
 import { resolvePath } from '../../lib/pathHelper';
 import { selectFields, selectInferedField } from '../../reducers/collections';
 import { Card } from '../UI';
-import styles from './EntryListing.css';
+import { prefixer } from '../../lib/styleHelper';
+
+const styles = prefixer('entryListing');
 
 export default class EntryListing extends React.Component {
   static propTypes = {

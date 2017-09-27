@@ -3,7 +3,10 @@ import React from 'react';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { Menu, MenuItem } from 'react-toolbox/lib/menu';
 import ToolbarButton from './ToolbarButton';
-import styles from './ToolbarComponentsMenu.css';
+import { prefixer } from '../../../../../lib/styleHelper';
+
+const styles = prefixer('toolbarComponentsMenu');
+// import styles from './ToolbarComponentsMenu.css';
 
 export default class ToolbarComponentsMenu extends React.Component {
   static PropTypes = {

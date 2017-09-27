@@ -10,7 +10,10 @@ import { MARK_COMPONENTS, NODE_COMPONENTS } from './components';
 import RULES from './rules';
 import plugins, { EditListConfigured } from './plugins';
 import onKeyDown from './keys';
-import styles from './index.css';
+import { prefixer } from '../../../../../lib/styleHelper';
+
+const styles = prefixer('visualEditor');
+// import styles from './index.css';
 
 export default class Editor extends Component {
   constructor(props) {

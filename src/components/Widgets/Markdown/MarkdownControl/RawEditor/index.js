@@ -4,7 +4,11 @@ import { Editor as Slate, Plain } from 'slate';
 import { debounce } from 'lodash';
 import Toolbar from '../Toolbar/Toolbar';
 import { Sticky } from '../../../../UI/Sticky/Sticky';
-import styles from './index.css';
+import { prefixer } from '../../../../../lib/styleHelper';
+
+const styles = prefixer('rawEditor');
+const visualEditorStyles = prefixer('visualEditor');
+// import styles from './index.css';
 
 export default class RawEditor extends React.Component {
   constructor(props) {
@@ -53,8 +57,8 @@ export default class RawEditor extends React.Component {
     return (
       <div className={styles.rawWrapper}>
         <Sticky
-          className={styles.editorControlBar}
-          classNameActive={styles.editorControlBarSticky}
+          className={visualEditorStyles.editorControlBar}
+          classNameActive={visualEditorStyles.editorControlBarSticky}
           fillContainerWidth
         >
           <Toolbar onToggleMode={this.handleToggleMode} disabled rawMode />

@@ -1,4 +1,6 @@
-.entriesPanel {
-  padding: 0 40px;
+.app-- {
+  &entriesPanel {
+    padding: 0 40px;
+  }
 }
 

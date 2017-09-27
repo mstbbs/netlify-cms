@@ -5,7 +5,10 @@ import Authenticator from '../../lib/netlify-auth';
 import { Icon } from '../../components/UI';
 import { Notifs } from 'redux-notifications';
 import { Toast } from '../../components/UI/index';
-import styles from './AuthenticationPage.css';
+import { prefixer } from '../../lib/styleHelper';
+
+const styles = prefixer('githubAuthenticationPage');
+// import styles from './AuthenticationPage.css';
 
 export default class AuthenticationPage extends React.Component {
   static propTypes = {
